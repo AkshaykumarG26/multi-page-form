@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {FormsContext} from "./context/FormsContext"
+
 ReactDOM.render(
+  
   <React.StrictMode>
+    <FormsContext>
     <App />
+  </FormsContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
