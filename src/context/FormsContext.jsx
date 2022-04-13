@@ -24,7 +24,7 @@ export const FormsContext = () => {
         setFinalData(finalData => [...finalData, userData])
         setUserData(data)
 
-        console.log(userData)
+        // console.log(userData)
         setCurrentStep(1)
   }
 

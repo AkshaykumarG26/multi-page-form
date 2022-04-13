@@ -6,7 +6,7 @@ import { Stepper, Step, StepLabel } from "@material-ui/core";
 import { multiStepContext } from "./context/FormsContext";
 import {DisplayForms} from './components/DisplayForms';
 function App() {
-  const { currentStep, finalData } = useContext(multiStepContext);
+  const { currentStep } = useContext(multiStepContext);
   const showSteps = (step) => {
     switch (step) {
       case 1:
@@ -36,6 +36,7 @@ function App() {
       </div>
 
       {showSteps(currentStep)}
+      <br />
       <DisplayForms/>
     </div>
   );
